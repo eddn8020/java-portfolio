@@ -6,7 +6,7 @@ public class FileHandler {
     public static void main(String[]args){
         try {
             // open input stream
-            FileReader fr = new FileReader("C:\\Users\\edwar\\Documents\\java_files\\test1.txt");
+            FileReader fr = new FileReader("test.txt");
             // then use the BufferedReader class to read text from the file
             BufferedReader br = new BufferedReader(fr);
             String x = br.readLine(); // read each line
