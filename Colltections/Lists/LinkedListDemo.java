@@ -4,7 +4,7 @@ import java.util.List;
 
 // This program includes a list created by the LinkedList class and some methods including, get, set snd remove
 
-public class LinkedListEx1 {
+public class LinkedListDemo {
     public static void main(String[]args) {
         // adds 2, 4, 6, 8 and 0 to myList
         LinkedList<Integer> myList = new LinkedList<>();
