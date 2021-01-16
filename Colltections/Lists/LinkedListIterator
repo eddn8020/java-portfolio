@@ -1,0 +1,28 @@
+import java.util.*;
+
+// This program iterates through a list and then sorts the list  
+
+public class LinkedListExIterator {
+    public static void main(String[]args) {
+        // adds weekdays to myList
+        LinkedList<String> myList = new LinkedList<>();
+        myList.add("Sun");
+        myList.add("Mon");
+        myList.add("Tues");
+        myList.add("Wed");
+        myList.add("Thurs");
+        myList.add("Fri");
+        myList.add("Sat");
+
+        // iterate through each item on the list
+        Iterator<String> iterator = myList.listIterator();
+        while (iterator.hasNext()) {
+            System.out.println("This day is: " + iterator.next());
+        }
+
+        // sorts the list in alphabetical order
+        Collections.sort(myList);
+        System.out.println("Sorted :" + myList );
+        
+    }
+}
