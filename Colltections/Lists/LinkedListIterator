@@ -2,7 +2,7 @@ import java.util.*;
 
 // This program iterates through a list and then sorts the list  
 
-public class LinkedListExIterator {
+public class LinkedListIterator {
     public static void main(String[]args) {
         // adds weekdays to myList
         LinkedList<String> myList = new LinkedList<>();
