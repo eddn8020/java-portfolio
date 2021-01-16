@@ -1,0 +1,37 @@
+import java.util.HashSet;
+import java.util.Set;
+
+// This program creates collections of items of unique data
+// combines all of the items wihin two different sets forming a union resulting in
+// one set with all of the collection of items from both sets.
+
+public class SetExample {
+
+    public static void main(String[]args){
+        // creates two sets
+        Set<Integer> setNumbOdd = new HashSet<>();
+        Set<Integer> setNumbEven = new HashSet<>();
+
+        // loops to add numbers to the sets
+        for (int i = 0; i < 10; i++) {
+           // setNumbEven.add(i);
+            i++;
+            setNumbOdd.add(i);
+        }
+
+        int i = 0;
+        for (i = 2; i <= 10; i++) {
+            if (i%2 == 0) {
+                setNumbEven.add(i);
+            }
+        }
+
+        System.out.println("List of odd numbers before union: " + setNumbOdd);
+        System.out.println("List of even numbers before union: " + setNumbEven);
+        // adds all of the elements in the setNumbEven set to the setNumbOdd set
+        setNumbOdd.addAll(setNumbEven);
+        System.out.println("List of odd numbers after union: " + setNumbOdd);
+
+    }
+
+}
